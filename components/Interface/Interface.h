@@ -7,7 +7,12 @@
 
 
 class Interface {
+private:
+    static void print(const std::string& nameFile);
+    static void fight();
 
+public:
+    static void mainMenu();
 };
 
 
