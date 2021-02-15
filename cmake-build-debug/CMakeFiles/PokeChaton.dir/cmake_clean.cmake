@@ -1,4 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.obj"
+  "CMakeFiles/PokeChaton.dir/components/Speace.cpp.obj"
+  "CMakeFiles/PokeChaton.dir/components/Speices.cpp.obj"
   "CMakeFiles/PokeChaton.dir/main.cpp.obj"
   "PokeChaton.exe"
   "PokeChaton.exe.manifest"

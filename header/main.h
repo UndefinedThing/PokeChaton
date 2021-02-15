@@ -8,6 +8,7 @@
 #include "Trainer.h"
 #include "type.h"
 #include "Pokemon.h"
+#include "Poke/PokeChat.h"
 #include "Attack.h"
 
 

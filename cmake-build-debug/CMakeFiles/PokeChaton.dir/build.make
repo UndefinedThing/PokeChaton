@@ -53,19 +53,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\Clion\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\Clion\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\martin\Documents\GitHub\PokeChaton
+CMAKE_SOURCE_DIR = D:\workingDirectory\courC++\PokeChaton\PokeChaton
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\martin\Documents\GitHub\PokeChaton\cmake-build-debug
+CMAKE_BINARY_DIR = D:\workingDirectory\courC++\PokeChaton\PokeChaton\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PokeChaton.dir/depend.make
@@ -78,30 +78,75 @@ include CMakeFiles/PokeChaton.dir/flags.make
 
 CMakeFiles/PokeChaton.dir/main.cpp.obj: CMakeFiles/PokeChaton.dir/flags.make
 CMakeFiles/PokeChaton.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\martin\Documents\GitHub\PokeChaton\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PokeChaton.dir/main.cpp.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PokeChaton.dir\main.cpp.obj -c C:\Users\martin\Documents\GitHub\PokeChaton\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\workingDirectory\courC++\PokeChaton\PokeChaton\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PokeChaton.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PokeChaton.dir\main.cpp.obj -c D:\workingDirectory\courC++\PokeChaton\PokeChaton\main.cpp
 
 CMakeFiles/PokeChaton.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PokeChaton.dir/main.cpp.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\martin\Documents\GitHub\PokeChaton\main.cpp > CMakeFiles\PokeChaton.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\workingDirectory\courC++\PokeChaton\PokeChaton\main.cpp > CMakeFiles\PokeChaton.dir\main.cpp.i
 
 CMakeFiles/PokeChaton.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PokeChaton.dir/main.cpp.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\martin\Documents\GitHub\PokeChaton\main.cpp -o CMakeFiles\PokeChaton.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\workingDirectory\courC++\PokeChaton\PokeChaton\main.cpp -o CMakeFiles\PokeChaton.dir\main.cpp.s
+
+CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.obj: CMakeFiles/PokeChaton.dir/flags.make
+CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.obj: ../components/PokeChat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\workingDirectory\courC++\PokeChaton\PokeChaton\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PokeChaton.dir\components\PokeChat.cpp.obj -c D:\workingDirectory\courC++\PokeChaton\PokeChaton\components\PokeChat.cpp
+
+CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\workingDirectory\courC++\PokeChaton\PokeChaton\components\PokeChat.cpp > CMakeFiles\PokeChaton.dir\components\PokeChat.cpp.i
+
+CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\workingDirectory\courC++\PokeChaton\PokeChaton\components\PokeChat.cpp -o CMakeFiles\PokeChaton.dir\components\PokeChat.cpp.s
+
+CMakeFiles/PokeChaton.dir/components/Speace.cpp.obj: CMakeFiles/PokeChaton.dir/flags.make
+CMakeFiles/PokeChaton.dir/components/Speace.cpp.obj: ../components/Speace.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\workingDirectory\courC++\PokeChaton\PokeChaton\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PokeChaton.dir/components/Speace.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PokeChaton.dir\components\Speace.cpp.obj -c D:\workingDirectory\courC++\PokeChaton\PokeChaton\components\Speace.cpp
+
+CMakeFiles/PokeChaton.dir/components/Speace.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PokeChaton.dir/components/Speace.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\workingDirectory\courC++\PokeChaton\PokeChaton\components\Speace.cpp > CMakeFiles\PokeChaton.dir\components\Speace.cpp.i
+
+CMakeFiles/PokeChaton.dir/components/Speace.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PokeChaton.dir/components/Speace.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\workingDirectory\courC++\PokeChaton\PokeChaton\components\Speace.cpp -o CMakeFiles\PokeChaton.dir\components\Speace.cpp.s
+
+CMakeFiles/PokeChaton.dir/components/Speices.cpp.obj: CMakeFiles/PokeChaton.dir/flags.make
+CMakeFiles/PokeChaton.dir/components/Speices.cpp.obj: ../components/Speices.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\workingDirectory\courC++\PokeChaton\PokeChaton\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PokeChaton.dir/components/Speices.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PokeChaton.dir\components\Speices.cpp.obj -c D:\workingDirectory\courC++\PokeChaton\PokeChaton\components\Speices.cpp
+
+CMakeFiles/PokeChaton.dir/components/Speices.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PokeChaton.dir/components/Speices.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\workingDirectory\courC++\PokeChaton\PokeChaton\components\Speices.cpp > CMakeFiles\PokeChaton.dir\components\Speices.cpp.i
+
+CMakeFiles/PokeChaton.dir/components/Speices.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PokeChaton.dir/components/Speices.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\workingDirectory\courC++\PokeChaton\PokeChaton\components\Speices.cpp -o CMakeFiles\PokeChaton.dir\components\Speices.cpp.s
 
 # Object files for target PokeChaton
 PokeChaton_OBJECTS = \
-"CMakeFiles/PokeChaton.dir/main.cpp.obj"
+"CMakeFiles/PokeChaton.dir/main.cpp.obj" \
+"CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.obj" \
+"CMakeFiles/PokeChaton.dir/components/Speace.cpp.obj" \
+"CMakeFiles/PokeChaton.dir/components/Speices.cpp.obj"
 
 # External object files for target PokeChaton
 PokeChaton_EXTERNAL_OBJECTS =
 
 PokeChaton.exe: CMakeFiles/PokeChaton.dir/main.cpp.obj
+PokeChaton.exe: CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.obj
+PokeChaton.exe: CMakeFiles/PokeChaton.dir/components/Speace.cpp.obj
+PokeChaton.exe: CMakeFiles/PokeChaton.dir/components/Speices.cpp.obj
 PokeChaton.exe: CMakeFiles/PokeChaton.dir/build.make
 PokeChaton.exe: CMakeFiles/PokeChaton.dir/linklibs.rsp
 PokeChaton.exe: CMakeFiles/PokeChaton.dir/objects1.rsp
 PokeChaton.exe: CMakeFiles/PokeChaton.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\martin\Documents\GitHub\PokeChaton\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable PokeChaton.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\workingDirectory\courC++\PokeChaton\PokeChaton\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable PokeChaton.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\PokeChaton.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -114,6 +159,6 @@ CMakeFiles/PokeChaton.dir/clean:
 .PHONY : CMakeFiles/PokeChaton.dir/clean
 
 CMakeFiles/PokeChaton.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\martin\Documents\GitHub\PokeChaton C:\Users\martin\Documents\GitHub\PokeChaton C:\Users\martin\Documents\GitHub\PokeChaton\cmake-build-debug C:\Users\martin\Documents\GitHub\PokeChaton\cmake-build-debug C:\Users\martin\Documents\GitHub\PokeChaton\cmake-build-debug\CMakeFiles\PokeChaton.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\workingDirectory\courC++\PokeChaton\PokeChaton D:\workingDirectory\courC++\PokeChaton\PokeChaton D:\workingDirectory\courC++\PokeChaton\PokeChaton\cmake-build-debug D:\workingDirectory\courC++\PokeChaton\PokeChaton\cmake-build-debug D:\workingDirectory\courC++\PokeChaton\PokeChaton\cmake-build-debug\CMakeFiles\PokeChaton.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PokeChaton.dir/depend
 

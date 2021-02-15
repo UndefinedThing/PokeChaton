@@ -4,7 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/martin/Documents/GitHub/PokeChaton/main.cpp" "C:/Users/martin/Documents/GitHub/PokeChaton/cmake-build-debug/CMakeFiles/PokeChaton.dir/main.cpp.obj"
+  "D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/PokeChat.cpp" "D:/workingDirectory/courC++/PokeChaton/PokeChaton/cmake-build-debug/CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.obj"
+  "D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/Speace.cpp" "D:/workingDirectory/courC++/PokeChaton/PokeChaton/cmake-build-debug/CMakeFiles/PokeChaton.dir/components/Speace.cpp.obj"
+  "D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/Speices.cpp" "D:/workingDirectory/courC++/PokeChaton/PokeChaton/cmake-build-debug/CMakeFiles/PokeChaton.dir/components/Speices.cpp.obj"
+  "D:/workingDirectory/courC++/PokeChaton/PokeChaton/main.cpp" "D:/workingDirectory/courC++/PokeChaton/PokeChaton/cmake-build-debug/CMakeFiles/PokeChaton.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

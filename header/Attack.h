@@ -11,13 +11,17 @@
 
 using namespace std;
 
-class Attack: public Type{
+class Attack{
 private:
     int IdAtk;
     string Labelle;
     int StamCost;
     Type type;
 public:
+
+    Atk1(){
+
+    }
 
 
     Attack();

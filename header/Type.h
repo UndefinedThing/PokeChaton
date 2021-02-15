@@ -14,13 +14,13 @@ class Type{
 private:
     int IdType;
     string libelle;
-    float PrimaryAtkadvantage;
-    float SecondaryAtkadvantage;
-    float PrimaryDefweaknesses;
-    float SecondaryDefweaknesses;
+
 
 public:
 
+    Fire(){
+        this-> libelle = "Fire";
+    }
 
     Type();
 
@@ -38,21 +38,7 @@ public:
 
     void setLibelle(const string &libelle);
 
-    float getPrimaryAtkadvantage() const;
 
-    void setPrimaryAtkadvantage(float primaryAtkadvantage);
-
-    float getSecondaryAtkadvantage() const;
-
-    void setSecondaryAtkadvantage(float secondaryAtkadvantage);
-
-    float getPrimaryDefweaknesses() const;
-
-    void setPrimaryDefweaknesses(float primaryDefweaknesses);
-
-    float getSecondaryDefweaknesses() const;
-
-    void setSecondaryDefweaknesses(float secondaryDefweaknesses);
 
 };
 

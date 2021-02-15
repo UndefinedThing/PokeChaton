@@ -3,4 +3,4 @@ project(PokeChaton)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(PokeChaton main.cpp)
+add_executable(PokeChaton main.cpp components/Poke/PokeChat.cpp header/Poke/Speace.h components/Poke/Speace.cpp)

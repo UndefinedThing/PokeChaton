@@ -58,19 +58,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\Clion\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\Clion\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\martin\Documents\GitHub\PokeChaton
+CMAKE_SOURCE_DIR = D:\workingDirectory\courC++\PokeChaton\PokeChaton
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\martin\Documents\GitHub\PokeChaton\cmake-build-debug
+CMAKE_BINARY_DIR = D:\workingDirectory\courC++\PokeChaton\PokeChaton\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = C:\Users\martin\Documents\GitHub\PokeChaton\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\Clion\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -89,7 +89,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\Clion\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\martin\Documents\GitHub\PokeChaton\cmake-build-debug\CMakeFiles C:\Users\martin\Documents\GitHub\PokeChaton\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\workingDirectory\courC++\PokeChaton\PokeChaton\cmake-build-debug\CMakeFiles D:\workingDirectory\courC++\PokeChaton\PokeChaton\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\martin\Documents\GitHub\PokeChaton\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\workingDirectory\courC++\PokeChaton\PokeChaton\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,87 @@ PokeChaton/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/build
 .PHONY : PokeChaton/fast
 
+components/PokeChat.obj: components/PokeChat.cpp.obj
+
+.PHONY : components/PokeChat.obj
+
+# target to build an object file
+components/PokeChat.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.obj
+.PHONY : components/PokeChat.cpp.obj
+
+components/PokeChat.i: components/PokeChat.cpp.i
+
+.PHONY : components/PokeChat.i
+
+# target to preprocess a source file
+components/PokeChat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.i
+.PHONY : components/PokeChat.cpp.i
+
+components/PokeChat.s: components/PokeChat.cpp.s
+
+.PHONY : components/PokeChat.s
+
+# target to generate assembly for a file
+components/PokeChat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.s
+.PHONY : components/PokeChat.cpp.s
+
+components/Speace.obj: components/Speace.cpp.obj
+
+.PHONY : components/Speace.obj
+
+# target to build an object file
+components/Speace.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Speace.cpp.obj
+.PHONY : components/Speace.cpp.obj
+
+components/Speace.i: components/Speace.cpp.i
+
+.PHONY : components/Speace.i
+
+# target to preprocess a source file
+components/Speace.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Speace.cpp.i
+.PHONY : components/Speace.cpp.i
+
+components/Speace.s: components/Speace.cpp.s
+
+.PHONY : components/Speace.s
+
+# target to generate assembly for a file
+components/Speace.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Speace.cpp.s
+.PHONY : components/Speace.cpp.s
+
+components/Speices.obj: components/Speices.cpp.obj
+
+.PHONY : components/Speices.obj
+
+# target to build an object file
+components/Speices.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Speices.cpp.obj
+.PHONY : components/Speices.cpp.obj
+
+components/Speices.i: components/Speices.cpp.i
+
+.PHONY : components/Speices.i
+
+# target to preprocess a source file
+components/Speices.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Speices.cpp.i
+.PHONY : components/Speices.cpp.i
+
+components/Speices.s: components/Speices.cpp.s
+
+.PHONY : components/Speices.s
+
+# target to generate assembly for a file
+components/Speices.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Speices.cpp.s
+.PHONY : components/Speices.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -178,6 +259,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PokeChaton
+	@echo ... components/PokeChat.obj
+	@echo ... components/PokeChat.i
+	@echo ... components/PokeChat.s
+	@echo ... components/Speace.obj
+	@echo ... components/Speace.i
+	@echo ... components/Speace.s
+	@echo ... components/Speices.obj
+	@echo ... components/Speices.i
+	@echo ... components/Speices.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

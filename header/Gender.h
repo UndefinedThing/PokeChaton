@@ -5,10 +5,17 @@
 #ifndef POKEMONLINE_GENDER_H
 #define POKEMONLINE_GENDER_H
 
+#include <iostream>
+#include "main.h"
+#include "Attack.h"
+
+using namespace std;
+
+
 class Gender{
 private:
     int id;
-    int libelle;
+    string libelle;
 
 public:
 
@@ -22,9 +29,9 @@ public:
 
     void setId(int id);
 
-    int getLibelle() const;
+    string getLibelle() const;
 
-    void setLibelle(int libelle);
+    void setLibelle(string libelle);
 
 
 };
