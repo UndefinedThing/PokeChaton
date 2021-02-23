@@ -10,6 +10,27 @@ using namespace std;
 
 void AddSpeace(int id, const string &speaceName, int lvlEvo, int attaque, int defence, int spécial, int vitesse,int precisin){
 
+
+    csv_data data = csv_reader("monfichier.csv").readAll();
+
+    /**
+
+    ifstream fichier("../components/db/FirstGenPokemon.csv", ios::in);
+
+    int idbeta = 4;
+
+    if(fichier)  // si l'ouverture a réussi
+    {
+
+
+        fichier.close();  // on ferme le fichier
+    }
+    else  // sinon
+        cerr << "Impossible d'ouvrir le fichier !" << endl;
+
+     **/
+
+
 }
 
 int Speace::getId() const {
@@ -28,21 +49,6 @@ void Speace::setSpeaceName(const string &speaceName) {
     SpeaceName = speaceName;
 }
 
-int Speace::getId() const {
-    return id;
-}
-
-void Speace::setId(int id) {
-    Speace::id = id;
-}
-
-const string &Speace::getSpeaceName() const {
-    return SpeaceName;
-}
-
-void Speace::setSpeaceName(const string &speaceName) {
-    SpeaceName = speaceName;
-}
 
 int Speace::getLvlEvo() const {
     return lvlEvo;

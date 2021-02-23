@@ -80,16 +80,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/PokeChat.cpp">
+		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/Poke/PokeChat.cpp">
 			<Option target="PokeChaton"/>
 		</Unit>
-		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/Speace.cpp">
+		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/Poke/Speace.cpp">
 			<Option target="PokeChaton"/>
 		</Unit>
-		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/Speices.cpp">
+		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/db/CSVTraitement.cpp">
 			<Option target="PokeChaton"/>
 		</Unit>
-		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/header/Speace.h">
+		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/db/CSVTraitement.h">
+			<Option target="PokeChaton"/>
+		</Unit>
+		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/header/Poke/Speace.h">
 			<Option target="PokeChaton"/>
 		</Unit>
 		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/main.cpp">

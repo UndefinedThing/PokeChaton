@@ -142,86 +142,86 @@ PokeChaton/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/build
 .PHONY : PokeChaton/fast
 
-components/PokeChat.obj: components/PokeChat.cpp.obj
+components/Poke/PokeChat.obj: components/Poke/PokeChat.cpp.obj
 
-.PHONY : components/PokeChat.obj
-
-# target to build an object file
-components/PokeChat.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.obj
-.PHONY : components/PokeChat.cpp.obj
-
-components/PokeChat.i: components/PokeChat.cpp.i
-
-.PHONY : components/PokeChat.i
-
-# target to preprocess a source file
-components/PokeChat.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.i
-.PHONY : components/PokeChat.cpp.i
-
-components/PokeChat.s: components/PokeChat.cpp.s
-
-.PHONY : components/PokeChat.s
-
-# target to generate assembly for a file
-components/PokeChat.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/PokeChat.cpp.s
-.PHONY : components/PokeChat.cpp.s
-
-components/Speace.obj: components/Speace.cpp.obj
-
-.PHONY : components/Speace.obj
+.PHONY : components/Poke/PokeChat.obj
 
 # target to build an object file
-components/Speace.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Speace.cpp.obj
-.PHONY : components/Speace.cpp.obj
+components/Poke/PokeChat.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/PokeChat.cpp.obj
+.PHONY : components/Poke/PokeChat.cpp.obj
 
-components/Speace.i: components/Speace.cpp.i
+components/Poke/PokeChat.i: components/Poke/PokeChat.cpp.i
 
-.PHONY : components/Speace.i
+.PHONY : components/Poke/PokeChat.i
 
 # target to preprocess a source file
-components/Speace.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Speace.cpp.i
-.PHONY : components/Speace.cpp.i
+components/Poke/PokeChat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/PokeChat.cpp.i
+.PHONY : components/Poke/PokeChat.cpp.i
 
-components/Speace.s: components/Speace.cpp.s
+components/Poke/PokeChat.s: components/Poke/PokeChat.cpp.s
 
-.PHONY : components/Speace.s
+.PHONY : components/Poke/PokeChat.s
 
 # target to generate assembly for a file
-components/Speace.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Speace.cpp.s
-.PHONY : components/Speace.cpp.s
+components/Poke/PokeChat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/PokeChat.cpp.s
+.PHONY : components/Poke/PokeChat.cpp.s
 
-components/Speices.obj: components/Speices.cpp.obj
+components/Poke/Speace.obj: components/Poke/Speace.cpp.obj
 
-.PHONY : components/Speices.obj
+.PHONY : components/Poke/Speace.obj
 
 # target to build an object file
-components/Speices.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Speices.cpp.obj
-.PHONY : components/Speices.cpp.obj
+components/Poke/Speace.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/Speace.cpp.obj
+.PHONY : components/Poke/Speace.cpp.obj
 
-components/Speices.i: components/Speices.cpp.i
+components/Poke/Speace.i: components/Poke/Speace.cpp.i
 
-.PHONY : components/Speices.i
+.PHONY : components/Poke/Speace.i
 
 # target to preprocess a source file
-components/Speices.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Speices.cpp.i
-.PHONY : components/Speices.cpp.i
+components/Poke/Speace.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/Speace.cpp.i
+.PHONY : components/Poke/Speace.cpp.i
 
-components/Speices.s: components/Speices.cpp.s
+components/Poke/Speace.s: components/Poke/Speace.cpp.s
 
-.PHONY : components/Speices.s
+.PHONY : components/Poke/Speace.s
 
 # target to generate assembly for a file
-components/Speices.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Speices.cpp.s
-.PHONY : components/Speices.cpp.s
+components/Poke/Speace.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/Speace.cpp.s
+.PHONY : components/Poke/Speace.cpp.s
+
+components/db/CSVTraitement.obj: components/db/CSVTraitement.cpp.obj
+
+.PHONY : components/db/CSVTraitement.obj
+
+# target to build an object file
+components/db/CSVTraitement.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/db/CSVTraitement.cpp.obj
+.PHONY : components/db/CSVTraitement.cpp.obj
+
+components/db/CSVTraitement.i: components/db/CSVTraitement.cpp.i
+
+.PHONY : components/db/CSVTraitement.i
+
+# target to preprocess a source file
+components/db/CSVTraitement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/db/CSVTraitement.cpp.i
+.PHONY : components/db/CSVTraitement.cpp.i
+
+components/db/CSVTraitement.s: components/db/CSVTraitement.cpp.s
+
+.PHONY : components/db/CSVTraitement.s
+
+# target to generate assembly for a file
+components/db/CSVTraitement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/db/CSVTraitement.cpp.s
+.PHONY : components/db/CSVTraitement.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -259,15 +259,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PokeChaton
-	@echo ... components/PokeChat.obj
-	@echo ... components/PokeChat.i
-	@echo ... components/PokeChat.s
-	@echo ... components/Speace.obj
-	@echo ... components/Speace.i
-	@echo ... components/Speace.s
-	@echo ... components/Speices.obj
-	@echo ... components/Speices.i
-	@echo ... components/Speices.s
+	@echo ... components/Poke/PokeChat.obj
+	@echo ... components/Poke/PokeChat.i
+	@echo ... components/Poke/PokeChat.s
+	@echo ... components/Poke/Speace.obj
+	@echo ... components/Poke/Speace.i
+	@echo ... components/Poke/Speace.s
+	@echo ... components/db/CSVTraitement.obj
+	@echo ... components/db/CSVTraitement.i
+	@echo ... components/db/CSVTraitement.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

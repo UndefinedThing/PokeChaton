@@ -40,6 +40,8 @@ public:
         this-> attacks.push_back(ember);
     }
 
+    void pokeChatEvo
+
     void PokeChat::addPokeChat(int idPokeChat, const string &name, const Gender &gender, const vector<Type> &type, int lvl,
                                int health, int attaqueModifer, int defenceModifer, int spécialModifer, int vitesseModifer,
                                int precisinModifer, const Speace &speaces1, const vector<Attack> &atkList);
