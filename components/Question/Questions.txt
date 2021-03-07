@@ -1,0 +1,3 @@
+id;question;reponse1;reponse2;reponse3;reponse4;reponse5;reponse6
+1;Où voulez vous allez ?;Hautes herbes ( attaquer des pokemons sauvages );Boutique Pokémon ( achat d'objet );Centre Pokémon ( soigné et pc );Sac ( objets et Pokémons possédés );Options;
+2;Option;;;;;;Quitter

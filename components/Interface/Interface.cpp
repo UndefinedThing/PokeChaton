@@ -7,37 +7,39 @@
 #include <fstream>
 #include <limits>
 #include "Interface.h"
+#include <windows.h>
+#include <sstream>
+#include "../Question/Question.h"
+
 
 using namespace std;
 
-string mainMenuPrint() {
-    string mainMenuPrint;
-    mainMenuPrint =  "-----------------------------------------------------------\n";
-    mainMenuPrint += "|                                                         |\n";
-    mainMenuPrint += "|                                                         |\n";
-    mainMenuPrint += "|                                                         |\n";
-    mainMenuPrint += "|                                                         |\n";
-    mainMenuPrint += "|                         _______                         |\n";
-    mainMenuPrint += "|                        /  (-)  \\                        |\n";
-    mainMenuPrint += "|                        |  ___  |                        |\n";
-    mainMenuPrint += "|                        |__| |__|           ||||||||||   |\n";
-    mainMenuPrint += "|                                            |/\\/\\/\\/\\|   |\n";
-    mainMenuPrint += "|                                            /\\/\\/\\/\\/\\   |\n";
-    mainMenuPrint += "|                                                         |\n";
-    mainMenuPrint += "-----------------------------------------------------------\n";
-    mainMenuPrint += "|                                                         |\n";
-    mainMenuPrint += "|  Où voulez vous allez ? :                               |\n";
-    mainMenuPrint += "|                                                         |\n";
-    mainMenuPrint += "|  1. Hautes herbes. (attaquer des pokemons)              |\n";
-    mainMenuPrint += "|  2. Boutique Pokémon ( achat d'objet )                  |\n";
-    mainMenuPrint += "|  3. Centre Pokémon ( soigné et pc )                     |\n";
-    mainMenuPrint += "|  4. Sac ( objets et Pokémons possédés )                 |\n";
-    mainMenuPrint += "|  5. Options                                             |\n";
-    mainMenuPrint += "|                                                         |\n";
-    mainMenuPrint += "|                                                         |\n";
-    mainMenuPrint += "-----------------------------------------------------------\n";
-    return mainMenuPrint;
+
+string getCurrentDir() {
+    char buff[MAX_PATH];
+    GetModuleFileName( NULL, buff, MAX_PATH );
+    string::size_type position = string( buff ).find_last_of( "\\/" );
+    return string( buff ).substr( 0, position);
 }
+
+
+/*
+    "-----------------------------------------------------------\n"
+    "|                                                         |\n"
+    "|                                                         |\n"
+    "|                                                         |\n"
+    "|                                                         |\n"
+    "|                         _______                         |\n"
+    "|                        /  (-)  \\                        |\n"
+    "|                        |  ___  |                        |\n"
+    "|                        |__| |__|           ||||||||||   |\n"
+    "|                                            |/\\/\\/\\/\\|   |\n"
+    "|                                            /\\/\\/\\/\\/\\   |\n"
+    "|                                                         |\n"
+    "-----------------------------------------------------------\n"
+*/
+
+
 void Interface::print(const string& nameFile) {
 // Create a text string, which is used to output the text file
     string myText;
@@ -48,7 +50,7 @@ void Interface::print(const string& nameFile) {
 // Use a while loop together with the getline() function to read the file line by line
     while (getline(MyReadFile, myText)) {
         // Output the text from the file
-        cout << myText;
+        cout << myText << endl;
     }
 
 // Close the file
@@ -58,9 +60,10 @@ void Interface::print(const string& nameFile) {
 void Interface::mainMenu() {
     bool play = true;
     int action=0;
+
     while (play) {
-//        print(R"(E:\Danny\code\ynov\C++\projet pokemon\PokeChaton\components\Interface\prints\mainMenu.txt)");
-        cout << mainMenuPrint();
+
+        print("../components/Interface/prints/mainMenu.txt");
         cin >> action;
         action = (int) action;
         switch (action) {
