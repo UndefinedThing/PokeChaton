@@ -169,32 +169,32 @@ components/Poke/PokeChat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/PokeChat.cpp.s
 .PHONY : components/Poke/PokeChat.cpp.s
 
-components/Poke/Speace.obj: components/Poke/Speace.cpp.obj
+components/Poke/Species.obj: components/Poke/Species.cpp.obj
 
-.PHONY : components/Poke/Speace.obj
+.PHONY : components/Poke/Species.obj
 
 # target to build an object file
-components/Poke/Speace.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/Speace.cpp.obj
-.PHONY : components/Poke/Speace.cpp.obj
+components/Poke/Species.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/Species.cpp.obj
+.PHONY : components/Poke/Species.cpp.obj
 
-components/Poke/Speace.i: components/Poke/Speace.cpp.i
+components/Poke/Species.i: components/Poke/Species.cpp.i
 
-.PHONY : components/Poke/Speace.i
+.PHONY : components/Poke/Species.i
 
 # target to preprocess a source file
-components/Poke/Speace.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/Speace.cpp.i
-.PHONY : components/Poke/Speace.cpp.i
+components/Poke/Species.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/Species.cpp.i
+.PHONY : components/Poke/Species.cpp.i
 
-components/Poke/Speace.s: components/Poke/Speace.cpp.s
+components/Poke/Species.s: components/Poke/Species.cpp.s
 
-.PHONY : components/Poke/Speace.s
+.PHONY : components/Poke/Species.s
 
 # target to generate assembly for a file
-components/Poke/Speace.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/Speace.cpp.s
-.PHONY : components/Poke/Speace.cpp.s
+components/Poke/Species.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/Species.cpp.s
+.PHONY : components/Poke/Species.cpp.s
 
 components/db/CSVTraitement.obj: components/db/CSVTraitement.cpp.obj
 
@@ -262,9 +262,9 @@ help:
 	@echo ... components/Poke/PokeChat.obj
 	@echo ... components/Poke/PokeChat.i
 	@echo ... components/Poke/PokeChat.s
-	@echo ... components/Poke/Speace.obj
-	@echo ... components/Poke/Speace.i
-	@echo ... components/Poke/Speace.s
+	@echo ... components/Poke/Species.obj
+	@echo ... components/Poke/Species.i
+	@echo ... components/Poke/Species.s
 	@echo ... components/db/CSVTraitement.obj
 	@echo ... components/db/CSVTraitement.i
 	@echo ... components/db/CSVTraitement.s

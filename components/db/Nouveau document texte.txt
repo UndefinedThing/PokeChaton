@@ -1,0 +1,18 @@
+Normal_Dmg, Fire_Dmg, Water_Dmg, Eletric_Dmg, Grass_Dmg, Ice_Dmg, Fight_Dmg, Poison_Dmg, Ground_Dmg, Flying_Dmg, Psychic_Dmg, Bug_Dmg, Rock_Dmg, Ghost_Dmg, Dragon_Dmg
+
+
+
+
+Number;
+Name;
+Type1;
+Type2;
+Exp_Speed;
+HP;
+Attack;
+Defense;
+Special;
+Speed;
+Evolutions;
+Legendary;
+Zone

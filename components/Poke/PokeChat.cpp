@@ -3,7 +3,7 @@
 //
 
 #include "../../header/Poke/PokeChat.h"
-#include "../../header/Poke/Speace.h"
+#include "../../header/Poke/Species.h"
 
 
 

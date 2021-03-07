@@ -83,7 +83,10 @@
 		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/Poke/PokeChat.cpp">
 			<Option target="PokeChaton"/>
 		</Unit>
-		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/Poke/Speace.cpp">
+		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/Poke/Species.cpp">
+			<Option target="PokeChaton"/>
+		</Unit>
+		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/db/CSVRecord.h">
 			<Option target="PokeChaton"/>
 		</Unit>
 		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/db/CSVTraitement.cpp">
@@ -92,7 +95,7 @@
 		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/components/db/CSVTraitement.h">
 			<Option target="PokeChaton"/>
 		</Unit>
-		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/header/Poke/Speace.h">
+		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/header/Poke/Species.h">
 			<Option target="PokeChaton"/>
 		</Unit>
 		<Unit filename="D:/workingDirectory/courC++/PokeChaton/PokeChaton/main.cpp">

@@ -43,6 +43,21 @@ class CSVTraitement{
     std::function<bool()> end_file_handler;
     std::function<void(csv_error,int,int)> error_handler;
 
+    void truncate(string_type & s) { s.clear(); }
+    void append(string_type& s, char c) { s.push_back(c); }
+
+    void call_field_handler();
+    void call_end_line_handler();
+    void call_comment_handler();
+    void call_error_handler(csv_error err);
+    void update_line_counter();
+
+
+
+    void csv_parser::consume(char c);
+
+
+    void csv_parser::end_of_data();
 
 
 

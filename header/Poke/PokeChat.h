@@ -9,7 +9,7 @@
 #include <iostream>
 #include "../main.h"
 #include "../Attack.h"
-#include "Speace.h"
+#include "Species.h"
 
 
 using namespace std;
