@@ -12,8 +12,6 @@ void PokeChat::addPokeChat(int idPokeChat, const string &name, const Gender &gen
                            int health, int attaqueModifer, int defenceModifer, int spécialModifer, int vitesseModifer,
                            int precisinModifer, const Speace &speaces, const vector<Attack> &atkList) {
 
-
-
 }
 
 
