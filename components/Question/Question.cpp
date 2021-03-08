@@ -81,7 +81,7 @@ void Question::printById(int id){
 //    nbline = count(istreambuf_iterator<char>(MyReadFile),
 //                   istreambuf_iterator<char>(), '\n');
 
-    cout << firstLine << endl;
+//    cout << firstLine << endl;
 
 // Use a while loop together with the getline() function to read the file line by line
     while (getline(MyReadFile, myText)) {
@@ -94,6 +94,7 @@ void Question::printById(int id){
                     cout << i-1 << ". ";
                     cout << questionContent[i] << endl;
             }
+            break;
         }
         // vider questionContent
         questionContent.clear();
