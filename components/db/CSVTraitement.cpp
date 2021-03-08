@@ -1,4 +1,4 @@
-
+using namespace std;
 enum class csv_parser_state {
     initial,
     comment,
@@ -18,7 +18,7 @@ enum class csv_error {
     error_empty_file
 };
 
-typedef std::string string_type; // Pour pouvoir le changer plus facilement
+typedef string string_type; // Pour pouvoir le changer plus facilement
 std::function<bool(string_type const &)> comment_handler;
 std::function<bool(string_type const &)> field_handler;
 std::function<bool()> end_line_handler;

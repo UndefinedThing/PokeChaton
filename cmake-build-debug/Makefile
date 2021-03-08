@@ -142,32 +142,32 @@ PokeChaton/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/build
 .PHONY : PokeChaton/fast
 
-components/Poke/PokeChat.obj: components/Poke/PokeChat.cpp.obj
+components/Poke/Pokemon.obj: components/Poke/Pokemon.cpp.obj
 
-.PHONY : components/Poke/PokeChat.obj
+.PHONY : components/Poke/Pokemon.obj
 
 # target to build an object file
-components/Poke/PokeChat.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/PokeChat.cpp.obj
-.PHONY : components/Poke/PokeChat.cpp.obj
+components/Poke/Pokemon.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/Pokemon.cpp.obj
+.PHONY : components/Poke/Pokemon.cpp.obj
 
-components/Poke/PokeChat.i: components/Poke/PokeChat.cpp.i
+components/Poke/Pokemon.i: components/Poke/Pokemon.cpp.i
 
-.PHONY : components/Poke/PokeChat.i
+.PHONY : components/Poke/Pokemon.i
 
 # target to preprocess a source file
-components/Poke/PokeChat.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/PokeChat.cpp.i
-.PHONY : components/Poke/PokeChat.cpp.i
+components/Poke/Pokemon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/Pokemon.cpp.i
+.PHONY : components/Poke/Pokemon.cpp.i
 
-components/Poke/PokeChat.s: components/Poke/PokeChat.cpp.s
+components/Poke/Pokemon.s: components/Poke/Pokemon.cpp.s
 
-.PHONY : components/Poke/PokeChat.s
+.PHONY : components/Poke/Pokemon.s
 
 # target to generate assembly for a file
-components/Poke/PokeChat.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/PokeChat.cpp.s
-.PHONY : components/Poke/PokeChat.cpp.s
+components/Poke/Pokemon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PokeChaton.dir\build.make CMakeFiles/PokeChaton.dir/components/Poke/Pokemon.cpp.s
+.PHONY : components/Poke/Pokemon.cpp.s
 
 components/Poke/Species.obj: components/Poke/Species.cpp.obj
 
@@ -259,9 +259,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PokeChaton
-	@echo ... components/Poke/PokeChat.obj
-	@echo ... components/Poke/PokeChat.i
-	@echo ... components/Poke/PokeChat.s
+	@echo ... components/Poke/Pokemon.obj
+	@echo ... components/Poke/Pokemon.i
+	@echo ... components/Poke/Pokemon.s
 	@echo ... components/Poke/Species.obj
 	@echo ... components/Poke/Species.i
 	@echo ... components/Poke/Species.s

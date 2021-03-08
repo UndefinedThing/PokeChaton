@@ -5,11 +5,11 @@
 #ifndef POKECHATON_POKEMON_H
 #define POKECHATON_POKEMON_H
 
-#include <iostream>
+
 #include "../main.h"
 #include "../Attack.h"
 #include "Species.h"
-
+#include <iostream>
 using namespace std;
 
 class Pokemon
@@ -30,7 +30,7 @@ private:
     vector<Attack> AtkList;
 
 public:
-    void AddPokeChat(int idPokemon, const string &name, const Gender &gender, const vector<Type> &type, int lvl,
+    void AddPokemon(int idPokemon, const string &name, const Gender &gender, const vector<Type> &type, int lvl,
                           int health, int attaqueModifer, int defenceModifer, int specialModifer, int vitesseModifer,
                           int precisinModifer, const Species &species, const vector<Attack> &atkList);
 
