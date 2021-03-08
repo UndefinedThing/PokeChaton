@@ -57,7 +57,29 @@ void Interface::print(const string& nameFile) {
     MyReadFile.close();
 }
 
-void Interface::mainMenu() {
+void optionGame(){
+    int action=0;
+
+    Interface::print("../components/Interface/prints/mainMenu.txt");
+    cin >> action;
+    action = (int) action;
+    switch (action) {
+        case 5:
+            cout << "tallGrass" << endl;
+//            tallGrass();
+            break;
+        default:
+            cout << "Erreur de frappe recommencez" << endl;
+            break;
+
+    }
+    cin.clear(); // clears the error flags
+    // this line discards all the input waiting in the stream
+    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+}
+
+[[noreturn]] void Interface::mainMenu() {
     bool play = true;
     int action=0;
 
@@ -85,7 +107,7 @@ void Interface::mainMenu() {
                 break;
             case 5:
                 cout << "option" << endl;
-//            option();
+            optionGame();
                 break;
             case 6:
                 play = false;

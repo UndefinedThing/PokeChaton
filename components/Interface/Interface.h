@@ -11,7 +11,7 @@ private:
     static void fight();
 
 public:
-    static void mainMenu();
+    [[noreturn]] static void mainMenu();
 
     static void print(const std::string& nameFile);
 };

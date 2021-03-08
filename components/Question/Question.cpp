@@ -58,6 +58,7 @@ void parse(string line, const string& delimiter, vector<string> &returnValues){
         returnValues.push_back(token);
         line.erase(0, pos + delimiter.length());
     }
+    returnValues.push_back(line);
 
 }
 
@@ -89,11 +90,13 @@ void Question::printById(int id){
         sto = stoi(questionContent[0]);
         if (sto == id){
             for (int i = 1; i < nbCol; ++i) {
-                cout << questionContent[i] << endl;
+                if (i>1 && questionContent[i] != "")
+                    cout << i-1 << ". ";
+                    cout << questionContent[i] << endl;
             }
-
         }
         // vider questionContent
+        questionContent.clear();
     }
 
 // Close the file
