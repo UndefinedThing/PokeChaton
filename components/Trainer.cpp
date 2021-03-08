@@ -33,13 +33,13 @@ const vector <Pokemon> &Trainer::getBelt() const {
     return belt;
 }
 
-void Trainer::setBelt(const vector <Pokemon> &belt) {
+void Trainer::setBelt(const vector <PokeChat> &belt) {
     Trainer::belt = belt;
 }
 
 Trainer::Trainer() {}
 
-Trainer::Trainer(int id, int libelle, const string &name, const Gender &gender, int age, const vector<Pokemon> &belt)
+Trainer::Trainer(int id, int libelle, const string &name, const Gender &gender, int age, const vector<PokeChat> &belt)
         : Gender(id, libelle), name(name), gender(gender), age(age), belt(belt) {}
 
 Trainer::~Trainer() {

@@ -4,7 +4,7 @@
 int main()
 {
 
-    PokeChat chatzar = new PokeChat;
+    Pokemon chatzar = new Pokemon;
     Gender genderM = new Gender;
     Type type1 = new Type;
     Attack;
@@ -15,7 +15,7 @@ int main()
     genderM.setId(2);
     genderM.setLibelle("Male");
 
-    chatzar.addPokeChat("banane", genderM, type1, 5, 100, "chatzar")
+    chatzar.addPokemon("banane", genderM, type1, 5, 100, "chatzar")
 
         return 0;
 }

@@ -34,13 +34,13 @@ private:
 
 public:
 
-    AddSpecies() ;
+    Species() ;
 
 
     Species(int id, const string &speciesName, const vector<string> &typeSpecies, const string XpSpeed, int hp, int attack, int defense,
             int special, int speed, int evolutions, int legendary, int zone);
 
-    Species();
+
 
     virtual ~Species();
 

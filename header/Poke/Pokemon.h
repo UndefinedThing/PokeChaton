@@ -2,8 +2,8 @@
 // Created by paulf on 18/01/2021.
 //
 
-#ifndef POKECHATON_POKECHAT_H
-#define POKECHATON_POKECHAT_H
+#ifndef POKECHATON_POKEMON_H
+#define POKECHATON_POKEMON_H
 
 #include <iostream>
 #include "../main.h"
@@ -12,10 +12,10 @@
 
 using namespace std;
 
-class PokeChat
+class Pokemon
 {
 private:
-    int IdPokeChat;
+    int idPokemon;
     string name;
     Gender gender;
     vector<Type> type;
@@ -23,25 +23,24 @@ private:
     int Health;
     int attaqueModifer;
     int defenceModifer;
-    int spécialModifer;
+    int specialModifer;
     int vitesseModifer;
     int precisinModifer;
     Species species;
     vector<Attack> AtkList;
 
 public:
-    void
-    PokeChat::addPokeChat(int idPokeChat, const string &name, const Gender &gender, const vector<Type> &type, int lvl,
-                          int health, int attaqueModifer, int defenceModifer, int spécialModifer, int vitesseModifer,
-                          int precisinModifer, const Species &speaces1, const vector<Attack> &atkList);
+    void AddPokeChat(int idPokemon, const string &name, const Gender &gender, const vector<Type> &type, int lvl,
+                          int health, int attaqueModifer, int defenceModifer, int specialModifer, int vitesseModifer,
+                          int precisinModifer, const Species &species, const vector<Attack> &atkList);
 
-    PokeChat();
+    Pokemon();
 
-    PokeChat(int idPokeChat, const string &name, const Gender &gender, const vector<Type> &type, int lvl, int health,
-             int attaqueModifer, int defenceModifer, int spécialModifer, int vitesseModifer, int precisinModifer,
-             const Species &species1, const vector<Attack> &atkList);
+    Pokemon(int idPokemon, const string &name, const Gender &gender, const vector<Type> &type, int lvl, int health,
+            int attaqueModifer, int defenceModifer, int specialModifer, int vitesseModifer, int precisinModifer,
+            const Species &species, const vector<Attack> &atkList);
 
-    virtual ~PokeChat();
+    virtual ~Pokemon();
 
     int getAttaqueModifer() const;
 
@@ -51,9 +50,9 @@ public:
 
     void setDefenceModifer(int defenceModifer);
 
-    int getSpécialModifer() const;
+    int getSpecialModifer() const;
 
-    void setSpécialModifer(int spécialModifer);
+    void setSpecialModifer(int specialModifer);
 
     int getVitesseModifer() const;
 
@@ -63,9 +62,9 @@ public:
 
     void setPrecisinModifer(int precisinModifer);
 
-    int getIdPokeChat() const;
+    int getIdPokemon() const;
 
-    void setIdPokeChat(int idPokeChat);
+    void setIdPokemon(int idPokemon);
 
     const string &getName() const;
 
@@ -87,13 +86,13 @@ public:
 
     void setHealth(int health);
 
-    const Species &getSpeaces() const;
+    const Species &getSpecies() const;
 
-    void setSpeaces(const Species &speaces);
+    void setSpecies(const Species &species);
 
     const vector<Attack> &getAtkList() const;
 
     void setAtkList(const vector<Attack> &atkList);
-}
+};
 
-#endif //POKECHATON_POKECHAT_H
+#endif //POKECHATON_POKEMON_H

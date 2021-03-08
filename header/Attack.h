@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "main.h"
+#include "Type.h"
 
 using namespace std;
 
@@ -19,9 +20,6 @@ private:
     Type type;
 public:
 
-    Atk1(){
-
-    }
 
 
     Attack();

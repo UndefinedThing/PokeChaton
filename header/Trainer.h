@@ -8,6 +8,7 @@
 #include <vector>
 #include "main.h"
 #include "Gender.h"
+#include "Poke/Pokemon.h"
 
 
 class Trainer : public Gender{

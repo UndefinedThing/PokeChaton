@@ -18,10 +18,6 @@ private:
 
 public:
 
-    Fire(){
-        this-> libelle = "Fire";
-    }
-
     Type();
 
     Type(int idType, const string &libelle, float primaryAtkadvantage, float secondaryAtkadvantage,
