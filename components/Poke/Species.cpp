@@ -8,44 +8,83 @@
 
 using namespace std;
 
-void AddSpeacies (int _id, string _speciesName, vector<string> _typeSpecies, int _hp, int _attack, int _defense, int _special, int _speed, int _evolutions, int _legendary, int _Zone) {
+struct AddSpecies() {
+
+ifstream fichier("../components/db/FirstGenPokemon.csv", ios::in);
+
+struct Species_Struct {
+    int _id;
+    string _speciesName;
+    vector<string> _typeSpecies;
+    string _XpSpeed;
+    int _hp;
+    int _attack;
+    int _defense;
+    int _special;
+    int _speed;
+    int _evolution;
+    int _legendary;
+    int _zone;
+};
+
+struct Species_Struct _species;
+
+string strId;
+string strHp;
+string typeTest;
+string typeTest2;
+string strAttack;
+string strDefense;
+string strSpecial;
+string strSpeed;
+string strEvolution;
+string strLegendary;
+string strZone;
 
 
-    ifstream fichier("../components/db/FirstGenPokemon.csv", ios::in);
+if(fichier)  // si l'ouverture a réussi
+{
+    while(fichier.good()){
+        getline(fichier, strId,';');
+        getline(fichier, _species._speciesName,';');
+        getline(fichier, typeTest,';');
+        _species._typeSpecies.push_back (typeTest);
+        getline(fichier, typeTest2,';');
+        _species._typeSpecies.push_back (typeTest2);
+        getline(fichier, _species._XpSpeed,';');
+        getline(fichier, strHp,';');
+        getline(fichier, strAttack,';');
+        getline(fichier, strDefense,';');
+        getline(fichier, strSpecial,';');
+        getline(fichier, strSpeed,';');
+        getline(fichier, strEvolution,';');
+        getline(fichier, strLegendary,';');
+        getline(fichier, strZone,';');
 
-    string typeTest = "";
-    string typeTest2 = "";
+        _species._id = stoi(strId);
+        _species._hp = stoi(strHp);
+        _species._attack = stoi(strAttack);
+        _species._defense = stoi(strDefense);
+        _species._special = stoi(strSpecial);
+        _species._speed = stoi(strSpeed);
+        _species._evolution = stoi(strEvolution);
+        _species._legendary = stoi(strLegendary);
+        _species._zone = stoi(strZone);
 
-    if(fichier)  // si l'ouverture a réussi
-    {
-
-        while(fichier.good()){
-
-            getline(fichier,_id,';');
-            getline(fichier,_speciesName,';');
-            getline(fichier,typeTest,';');
-            _typeSpecies.push_back (typeTest);
-            getline(fichier,typeTest2,';');
-            _typeSpecies.push_back (typeTest2);
-            getline(fichier,XpSpeed,';');
-            getline(fichier,hp,';');
-            getline(fichier,attack,';');
-            getline(fichier,defense,';');
-            getline(fichier,special,';');
-            getline(fichier,speed,';');
-            getline(fichier,evolutions,';');
-            getline(fichier,legendary,';');
-
-        }
-
-        fichier.close();  // on ferme le fichier
     }
-    else  // sinon
-        cerr << "Impossible d'ouvrir le fichier !" << endl;
 
+    fichier.close();  // on ferme le fichier
 
 }
+else{
+// sinon
+cerr << "Impossible d'ouvrir le fichier !" <<
+endl;
+}
 
+return
+_species;
+}
 
 Species::Species() {}
 
@@ -137,9 +176,20 @@ void Species::setZone(int zone) {
     Zone = zone;
 }
 
-Species::Species(int id, const string &speciesName, const vector<string> &typeSpecies, int hp, int attack, int defense,
+const string &Species::getXpSpeed() const {
+    return XpSpeed;
+}
+
+void Species::setXpSpeed(const string &xpSpeed) {
+    XpSpeed = xpSpeed;
+}
+
+
+Species::Species(int id, const string &speciesName, const vector<string> &typeSpecies, const string XpSpeed, int hp,
+                 int attack, int defense,
                  int special, int speed, int evolutions, int legendary, int zone) : id(id), speciesName(speciesName),
-                                                                                    TypeSpecies(typeSpecies), HP(hp),
+                                                                                    TypeSpecies(typeSpecies),
+                                                                                    XpSpeed(XpSpeed), HP(hp),
                                                                                     Attack(attack), Defense(defense),
                                                                                     Special(special), Speed(speed),
                                                                                     Evolutions(evolutions),

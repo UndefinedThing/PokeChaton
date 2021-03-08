@@ -20,7 +20,7 @@ private:
     int id;
     string speciesName;
     std::vector<string> TypeSpecies;
-
+    string XpSpeed;
     int HP;
     int Attack;
     int Defense;
@@ -34,10 +34,10 @@ private:
 
 public:
 
-    AddSpeace(int id, const string &speciesName, const vector<string> &typeSpecies, int hp, int attack, int defense, int special, int speed, int evolutions, int legendary);
+    AddSpecies() ;
 
 
-    Species(int id, const string &speciesName, const vector<string> &typeSpecies, int hp, int attack, int defense,
+    Species(int id, const string &speciesName, const vector<string> &typeSpecies, const string XpSpeed, int hp, int attack, int defense,
             int special, int speed, int evolutions, int legendary, int zone);
 
     Species();
@@ -87,6 +87,10 @@ public:
     int getZone() const;
 
     void setZone(int zone);
+
+    const string &getXpSpeed() const;
+
+    void setXpSpeed(const string &xpSpeed);
 
 };
 
