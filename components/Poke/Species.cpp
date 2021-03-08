@@ -8,11 +8,12 @@
 
 using namespace std;
 
-struct AddSpecies() {
+struct AddSpecies(){
 
-ifstream fichier("../components/db/FirstGenPokemon.csv", ios::in);
+    ifstream fichier("../components/db/FirstGenPokemon.csv", ios::in)};
 
-struct Species_Struct {
+struct Species_Struct
+{
     int _id;
     string _speciesName;
     vector<string> _typeSpecies;
@@ -41,25 +42,25 @@ string strEvolution;
 string strLegendary;
 string strZone;
 
-
-if(fichier)  // si l'ouverture a réussi
+if (fichier) // si l'ouverture a réussi
 {
-    while(fichier.good()){
-        getline(fichier, strId,';');
-        getline(fichier, _species._speciesName,';');
-        getline(fichier, typeTest,';');
-        _species._typeSpecies.push_back (typeTest);
-        getline(fichier, typeTest2,';');
-        _species._typeSpecies.push_back (typeTest2);
-        getline(fichier, _species._XpSpeed,';');
-        getline(fichier, strHp,';');
-        getline(fichier, strAttack,';');
-        getline(fichier, strDefense,';');
-        getline(fichier, strSpecial,';');
-        getline(fichier, strSpeed,';');
-        getline(fichier, strEvolution,';');
-        getline(fichier, strLegendary,';');
-        getline(fichier, strZone,';');
+    while (fichier.good())
+    {
+        getline(fichier, strId, ';');
+        getline(fichier, _species._speciesName, ';');
+        getline(fichier, typeTest, ';');
+        _species._typeSpecies.push_back(typeTest);
+        getline(fichier, typeTest2, ';');
+        _species._typeSpecies.push_back(typeTest2);
+        getline(fichier, _species._XpSpeed, ';');
+        getline(fichier, strHp, ';');
+        getline(fichier, strAttack, ';');
+        getline(fichier, strDefense, ';');
+        getline(fichier, strSpecial, ';');
+        getline(fichier, strSpeed, ';');
+        getline(fichier, strEvolution, ';');
+        getline(fichier, strLegendary, ';');
+        getline(fichier, strZone, ';');
 
         _species._id = stoi(strId);
         _species._hp = stoi(strHp);
@@ -70,120 +71,140 @@ if(fichier)  // si l'ouverture a réussi
         _species._evolution = stoi(strEvolution);
         _species._legendary = stoi(strLegendary);
         _species._zone = stoi(strZone);
-
     }
 
-    fichier.close();  // on ferme le fichier
-
+    fichier.close(); // on ferme le fichier
 }
-else{
-// sinon
-cerr << "Impossible d'ouvrir le fichier !" <<
-endl;
+else
+{
+    // sinon
+    cerr << "Impossible d'ouvrir le fichier !" << endl;
 }
 
-return
-_species;
+return _species;
 }
 
 Species::Species() {}
 
-int Species::getId() const {
+int Species::getId() const
+{
     return id;
 }
 
-void Species::setId(int id) {
+void Species::setId(int id)
+{
     Species::id = id;
 }
 
-const string &Species::getSpeciesName() const {
+const string &Species::getSpeciesName() const
+{
     return speciesName;
 }
 
-void Species::setSpeciesName(const string &speciesName) {
+void Species::setSpeciesName(const string &speciesName)
+{
     Species::speciesName = speciesName;
 }
 
-const vector<string> &Species::getTypeSpecies() const {
+const vector<string> &Species::getTypeSpecies() const
+{
     return TypeSpecies;
 }
 
-void Species::setTypeSpecies(const vector<string> &typeSpecies) {
+void Species::setTypeSpecies(const vector<string> &typeSpecies)
+{
     TypeSpecies = typeSpecies;
 }
 
-int Species::getAttack() const {
+int Species::getAttack() const
+{
     return Attack;
 }
 
-void Species::setAttack(int attack) {
+void Species::setAttack(int attack)
+{
     Attack = attack;
 }
 
-int Species::getDefense() const {
+int Species::getDefense() const
+{
     return Defense;
 }
 
-void Species::setDefense(int defense) {
+void Species::setDefense(int defense)
+{
     Defense = defense;
 }
 
-int Species::getSpecial() const {
+int Species::getSpecial() const
+{
     return Special;
 }
 
-void Species::setSpecial(int special) {
+void Species::setSpecial(int special)
+{
     Special = special;
 }
 
-int Species::getSpeed() const {
+int Species::getSpeed() const
+{
     return Speed;
 }
 
-void Species::setSpeed(int speed) {
+void Species::setSpeed(int speed)
+{
     Speed = speed;
 }
 
-int Species::getEvolutions() const {
+int Species::getEvolutions() const
+{
     return Evolutions;
 }
 
-void Species::setEvolutions(int evolutions) {
+void Species::setEvolutions(int evolutions)
+{
     Evolutions = evolutions;
 }
 
-int Species::getLegendary() const {
+int Species::getLegendary() const
+{
     return Legendary;
 }
 
-void Species::setLegendary(int legendary) {
+void Species::setLegendary(int legendary)
+{
     Legendary = legendary;
 }
 
-int Species::getHp() const {
+int Species::getHp() const
+{
     return HP;
 }
 
-void Species::setHp(int hp) {
+void Species::setHp(int hp)
+{
     HP = hp;
 }
 
-int Species::getZone() const {
+int Species::getZone() const
+{
     return Zone;
 }
 
-void Species::setZone(int zone) {
+void Species::setZone(int zone)
+{
     Zone = zone;
 }
 
-const string &Species::getXpSpeed() const {
+const string &Species::getXpSpeed() const
+{
     return XpSpeed;
 }
 
-void Species::setXpSpeed(const string &xpSpeed) {
+void Species::setXpSpeed(const string &xpSpeed)
+{
     XpSpeed = xpSpeed;
 }
-
 
 Species::Species(int id, const string &speciesName, const vector<string> &typeSpecies, const string XpSpeed, int hp,
                  int attack, int defense,
@@ -194,6 +215,3 @@ Species::Species(int id, const string &speciesName, const vector<string> &typeSp
                                                                                     Special(special), Speed(speed),
                                                                                     Evolutions(evolutions),
                                                                                     Legendary(legendary), Zone(zone) {}
-
-
-

@@ -5,16 +5,15 @@
 #ifndef POKECHATON_POKECHAT_H
 #define POKECHATON_POKECHAT_H
 
-
 #include <iostream>
 #include "../main.h"
 #include "../Attack.h"
 #include "Species.h"
 
-
 using namespace std;
 
-class PokeChat {
+class PokeChat
+{
 private:
     int IdPokeChat;
     string name;
@@ -27,32 +26,20 @@ private:
     int spécialModifer;
     int vitesseModifer;
     int precisinModifer;
-    Speace speaces;
+    Species species;
     vector<Attack> AtkList;
 
 public:
-
-    Chatzard() {
-        this-> name = "banane";
-        this-> type.push_back = Type.;
-        this->_ = 6;
-        this-> Lvl = BASE_LEVEL;
-        this-> attacks.push_back(ember);
-    }
-
-    void pokeChatEvo
-
-    void PokeChat::addPokeChat(int idPokeChat, const string &name, const Gender &gender, const vector<Type> &type, int lvl,
-                               int health, int attaqueModifer, int defenceModifer, int spécialModifer, int vitesseModifer,
-                               int precisinModifer, const Speace &speaces1, const vector<Attack> &atkList);
+    void
+    PokeChat::addPokeChat(int idPokeChat, const string &name, const Gender &gender, const vector<Type> &type, int lvl,
+                          int health, int attaqueModifer, int defenceModifer, int spécialModifer, int vitesseModifer,
+                          int precisinModifer, const Species &speaces1, const vector<Attack> &atkList);
 
     PokeChat();
 
-
     PokeChat(int idPokeChat, const string &name, const Gender &gender, const vector<Type> &type, int lvl, int health,
              int attaqueModifer, int defenceModifer, int spécialModifer, int vitesseModifer, int precisinModifer,
-             const Speace &speaces1, const vector<Attack> &atkList);
-
+             const Species &species1, const vector<Attack> &atkList);
 
     virtual ~PokeChat();
 
@@ -75,7 +62,6 @@ public:
     int getPrecisinModifer() const;
 
     void setPrecisinModifer(int precisinModifer);
-
 
     int getIdPokeChat() const;
 
@@ -101,18 +87,13 @@ public:
 
     void setHealth(int health);
 
-    const Speace &getSpeaces() const;
+    const Species &getSpeaces() const;
 
-    void setSpeaces(const Speace &speaces);
-
+    void setSpeaces(const Species &speaces);
 
     const vector<Attack> &getAtkList() const;
 
     void setAtkList(const vector<Attack> &atkList);
-
-
 }
-
-
 
 #endif //POKECHATON_POKECHAT_H
