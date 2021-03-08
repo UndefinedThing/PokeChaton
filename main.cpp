@@ -1,27 +1,21 @@
 #include <iostream>
 #include "header/main.h"
 
-int main() {
-
+int main()
+{
 
     PokeChat chatzar = new PokeChat;
     Gender genderM = new Gender;
     Type type1 = new Type;
-    Attack
+    Attack;
 
     type1.setIdType(12);
     type1.setLibelle("normal");
 
     genderM.setId(2);
-    genderM.setLibelle("Male")
+    genderM.setLibelle("Male");
 
+    chatzar.addPokeChat("banane", genderM, type1, 5, 100, "chatzar")
 
-
-    chatzar.addPokeChat("banane", genderM, type1, 5, 100, "chatzar", )
-
-
-
-
-
-    return 0;
+        return 0;
 }
