@@ -37,7 +37,74 @@ void Attack::setType(const Type &type) {
 }                                                primaryDefweaknesses,
                                                                                 secondaryDefweaknesses) {}
 
-Attack::Attack() {}
+Attack::Attack() {
+    cout <<" This is your pokemon :slight_smile: "<< endl ;
+
+
+                showPokemon(pokemons[0]);
+                std::vector<int> tab  = pokemons[0].getSkillPoints();
+                cout <<" "<< endl <<"Which skill do you want to use to attack ?"<<endl<<"Please, make your choice by entering 1; 2 or 3"<<endl;
+
+                int choix1 ;
+
+                cin >> choix1;
+
+                switch (choix1) {
+
+                case 1:
+
+                    // Attacking other pokemons
+
+                    for (int x = 0; x < pokemons.size(); x++) {
+                        if (x != 0) {
+                            pokemons[x].isAttackedByAnotherPokemonSkillPoints(tab[0]);
+
+                            int z = x+1;
+
+                            cout<<"Pokemon 1 attacked Pokemon " << z << " !"<<endl;
+
+
+                        }
+                    }
+
+                    break;
+                case 2:
+
+                    // Attacking other pokemons
+
+                    for (int x = 0; x < pokemons.size(); x++) {
+                        if (x != 0) {
+                            pokemons[x].isAttackedByAnotherPokemonSkillPoints(tab[1]);
+
+                                int z = x+1;
+                            cout<<"Pokemon 1 attacked Pokemon " << z << " !"<<endl;
+                        }
+                    }
+
+                    break;
+                case 3:
+                    // Attacking other pokemons
+
+                    for (int x = 0; x < pokemons.size(); x++) {
+                        if (x != 0) {
+                            pokemons[x].isAttackedByAnotherPokemonSkillPoints(tab[2]);
+
+                                    int z = x+1;
+                            cout<<"Pokemon 1 attacked Pokemon " << z << " !"<<endl;
+                        }
+                    }
+                 case 4:
+                    // Attacking other pokemons
+
+                    for (int x = 0; x < pokemons.size(); x++) {
+                        if (x != 0) {
+                            pokemons[x].isAttackedByAnotherPokemonSkillPoints(tab[2]);
+
+                                    int z = x+1;
+                            cout<<"Pokemon 1 attacked Pokemon " << z << " !"<<endl;
+                        }
+                    }
+}
 
 Attack::~Attack() {
 
