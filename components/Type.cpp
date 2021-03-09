@@ -20,14 +20,4 @@ void Type::setLibelle(const std::__cxx11::basic_string<char> &libelle) {
     Type::libelle = libelle;
 }
 
-
-Type::Type(int idType, const string &libelle, float primaryAtkadvantage, float secondaryAtkadvantage,
-           float primaryDefweaknesses, float secondaryDefweaknesses) : IdType(idType), libelle(libelle),
-                                                                       PrimaryAtkadvantage(primaryAtkadvantage),
-                                                                       SecondaryAtkadvantage(secondaryAtkadvantage),
-                                                                       PrimaryDefweaknesses(primaryDefweaknesses),
-                                                                       SecondaryDefweaknesses(secondaryDefweaknesses) {}
-
-Type::~Type() {
-
 }

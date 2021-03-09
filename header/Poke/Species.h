@@ -34,13 +34,10 @@ private:
 
 public:
 
-    Species() ;
+    Species();
 
-
-    Species(int id, const string &speciesName, const vector<string> &typeSpecies, const string XpSpeed, int hp, int attack, int defense,
-            int special, int speed, int evolutions, int legendary, int zone);
-
-
+    Species(int id, const string &speciesName, const vector<string> &typeSpecies, const string &xpSpeed, int hp,
+            int attack, int defense, int special, int speed, int evolutions, int legendary, int zone);
 
     virtual ~Species();
 
@@ -55,6 +52,10 @@ public:
     const vector<string> &getTypeSpecies() const;
 
     void setTypeSpecies(const vector<string> &typeSpecies);
+
+    const string &getXpSpeed() const;
+
+    void setXpSpeed(const string &xpSpeed);
 
     int getHp() const;
 
@@ -87,10 +88,6 @@ public:
     int getZone() const;
 
     void setZone(int zone);
-
-    const string &getXpSpeed() const;
-
-    void setXpSpeed(const string &xpSpeed);
 
 };
 

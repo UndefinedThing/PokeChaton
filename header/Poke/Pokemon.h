@@ -20,47 +20,30 @@ private:
     Gender gender;
     vector<Type> type;
     int Lvl;
-    int Health;
-    int attaqueModifer;
-    int defenceModifer;
-    int specialModifer;
-    int vitesseModifer;
-    int precisinModifer;
+    int health;
+    int healthMax;
+    int attackModifier;
+    int defenceModifier;
+    int specialModifier;
+    int speedModifier;
+    int precisionModifier;
     Species species;
     vector<Attack> AtkList;
 
 public:
-    void AddPokemon(int idPokemon, const string &name, const Gender &gender, const vector<Type> &type, int lvl,
-                          int health, int attaqueModifer, int defenceModifer, int specialModifer, int vitesseModifer,
-                          int precisinModifer, const Species &species, const vector<Attack> &atkList);
 
     Pokemon();
 
     Pokemon(int idPokemon, const string &name, const Gender &gender, const vector<Type> &type, int lvl, int health,
-            int attaqueModifer, int defenceModifer, int specialModifer, int vitesseModifer, int precisinModifer,
-            const Species &species, const vector<Attack> &atkList);
+            int healthMax, int attackModifier, int defenceModifier, int specialModifier, int speedModifier,
+            int precisionModifier, const Species &species, const vector<Attack> &atkList);
 
     virtual ~Pokemon();
 
-    int getAttaqueModifer() const;
+    bool is_capture(Pokemon pokemon);
 
-    void setAttaqueModifer(int attaqueModifer);
+    bool capture(Pokemon pokemon, vector<Pokemon> &team, vector<Pokemon> &box);
 
-    int getDefenceModifer() const;
-
-    void setDefenceModifer(int defenceModifer);
-
-    int getSpecialModifer() const;
-
-    void setSpecialModifer(int specialModifer);
-
-    int getVitesseModifer() const;
-
-    void setVitesseModifer(int vitesseModifer);
-
-    int getPrecisinModifer() const;
-
-    void setPrecisinModifer(int precisinModifer);
 
     int getIdPokemon() const;
 
@@ -86,6 +69,30 @@ public:
 
     void setHealth(int health);
 
+    int getHealthMax() const;
+
+    void setHealthMax(int healthMax);
+
+    int getAttackModifier() const;
+
+    void setAttackModifier(int attackModifier);
+
+    int getDefenceModifier() const;
+
+    void setDefenceModifier(int defenceModifier);
+
+    int getSpecialModifier() const;
+
+    void setSpecialModifier(int specialModifier);
+
+    int getSpeedModifier() const;
+
+    void setSpeedModifier(int speedModifier);
+
+    int getPrecisionModifier() const;
+
+    void setPrecisionModifier(int precisionModifier);
+
     const Species &getSpecies() const;
 
     void setSpecies(const Species &species);
@@ -93,6 +100,8 @@ public:
     const vector<Attack> &getAtkList() const;
 
     void setAtkList(const vector<Attack> &atkList);
+
+
 };
 
 #endif //POKECHATON_POKEMON_H

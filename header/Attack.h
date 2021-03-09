@@ -15,10 +15,11 @@ using namespace std;
 class Attack{
 private:
     int IdAtk;
-    string Labelle;
-    int StamCost;
+    string Libel;
+
     Type type;
 public:
+
 
 
 

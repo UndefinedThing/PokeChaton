@@ -8,7 +8,7 @@
 
 using namespace std;
 
-Species() {
+Void AddSpeciesById(int id) {
 
     ifstream MyFiles("../components/db/FirstGenPokemon.csv", ios::in);
 
@@ -81,7 +81,29 @@ Species() {
     return _species;
 }
 
-//Species() {}
+Species::Species() {}
+
+Species::Species(int id, const string &speciesName, const vector<string> &typeSpecies, const string &xpSpeed, int hp,
+                 int attack, int defense, int special, int speed, int evolutions, int legendary, int zone) : id(id),
+                                                                                                             speciesName(
+                                                                                                                     speciesName),
+                                                                                                             TypeSpecies(
+                                                                                                                     typeSpecies),
+                                                                                                             XpSpeed(xpSpeed),
+                                                                                                             HP(hp),
+                                                                                                             Attack(attack),
+                                                                                                             Defense(defense),
+                                                                                                             Special(special),
+                                                                                                             Speed(speed),
+                                                                                                             Evolutions(
+                                                                                                                     evolutions),
+                                                                                                             Legendary(
+                                                                                                                     legendary),
+                                                                                                             Zone(zone) {}
+
+Species::~Species() {
+
+}
 
 int Species::getId() const {
     return id;
@@ -105,6 +127,22 @@ const vector<string> &Species::getTypeSpecies() const {
 
 void Species::setTypeSpecies(const vector<string> &typeSpecies) {
     TypeSpecies = typeSpecies;
+}
+
+const string &Species::getXpSpeed() const {
+    return XpSpeed;
+}
+
+void Species::setXpSpeed(const string &xpSpeed) {
+    XpSpeed = xpSpeed;
+}
+
+int Species::getHp() const {
+    return HP;
+}
+
+void Species::setHp(int hp) {
+    HP = hp;
 }
 
 int Species::getAttack() const {
@@ -155,14 +193,6 @@ void Species::setLegendary(int legendary) {
     Legendary = legendary;
 }
 
-int Species::getHp() const {
-    return HP;
-}
-
-void Species::setHp(int hp) {
-    HP = hp;
-}
-
 int Species::getZone() const {
     return Zone;
 }
@@ -170,22 +200,3 @@ int Species::getZone() const {
 void Species::setZone(int zone) {
     Zone = zone;
 }
-
-const string &Species::getXpSpeed() const {
-    return XpSpeed;
-}
-
-void Species::setXpSpeed(const string &xpSpeed) {
-    XpSpeed = xpSpeed;
-}
-
-Species::Species(int id, const string &speciesName, const vector<string> &typeSpecies, const string XpSpeed, int hp,
-                 int attack, int defense,
-                 int special, int speed, int evolutions, int legendary, int zone) : id(id), speciesName(speciesName),
-                                                                                    TypeSpecies(typeSpecies),
-                                                                                    XpSpeed(XpSpeed), HP(hp),
-                                                                                    Attack(attack), Defense(defense),
-                                                                                    Special(special), Speed(speed),
-                                                                                    Evolutions(evolutions),
-                                                                                    Legendary(legendary), Zone(zone) {}
-

@@ -22,7 +22,7 @@ public:
 
     Trainer();
 
-    Trainer(int id, int libelle, const string &name, const Gender &gender, int age, const vector<Pokemon> &belt);
+    Trainer( int libelle, const string &name, const Gender &gender, int age, const vector<Pokemon> &belt);
 
     virtual ~Trainer();
 
