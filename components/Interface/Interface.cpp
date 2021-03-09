@@ -86,6 +86,7 @@ void optionGame(){
     while (play) {
 
         print("../components/Interface/prints/mainMenu.txt");
+        Question::printById(1);
         cin >> action;
         action = (int) action;
         switch (action) {
@@ -107,7 +108,7 @@ void optionGame(){
                 break;
             case 5:
                 cout << "option" << endl;
-            optionGame();
+//            optionGame();
                 break;
             case 6:
                 play = false;
